@@ -8,5 +8,5 @@ RUN yarn --frozen-lockfile --production && yarn cache clean
 
 COPY ./ ./
 
-ENV CI=true
-CMD ["yarn", "test"]
+EXPOSE 3000
+CMD ["yarn", "start"]

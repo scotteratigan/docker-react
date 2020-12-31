@@ -16,7 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:ci": "docker build -f Dockerfile.test -t test . && docker run test",
-    "prod": "docker build -t prod . && docker run -p 80:80 prod"
+    "prod": "docker build -t prod . && docker run -p 80:80 prod",
+    "dev": "docker-compose up"
   },
   "eslintConfig": {
     "extends": [
